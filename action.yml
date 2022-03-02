@@ -1,0 +1,12 @@
+name: 'GCP app engine yaml compiler'
+description: 'Compiles and swaps environment variables in yaml file with the minimal effort'
+branding:
+  icon: 'file-text'
+  color: 'blue'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  file:
+    required: false
+    description: 'This is the path file that you wish to use to replace the environment variables'
